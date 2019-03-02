@@ -7,5 +7,6 @@ $.get('https://api.openweathermap.org/data/2.5/weather?id=703448&appid='+api_key
     document.querySelector('#text2').innerHTML = res.name
     document.querySelector('#text3').innerHTML = res.weather[0].description
     document.querySelector('#text4').innerHTML = temp2+'°С'
+    document.querySelector('#text5').innerHTML = res.wind.speed+' m/sec'
 })
 
