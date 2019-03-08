@@ -10,10 +10,15 @@
   html { background: url(https://raw.githubusercontent.com/psotnik92/explo/master/images/weather.jpg);
   background-position: center center;
   background-size: cover;
-  background-repeant: no-repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-
   }
+  @media only screen and (max-width: 767px) {
+  body {
+   background-image: url(images/background-photo-mobile-devices.jpg);
+  }
+  table{
+  color: white;}
 </style>
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -24,8 +29,9 @@
 <p style="text-align: left"><button>5 Hours</button></p>
 
 
-<table border="1" width="100%" cellpadding="10">
-    <tr>
+<table border="1" width="50%" cellpadding="2">
+
+      <tr>
     <th>Источник</th>
     <th>Город</th>
     <th>Осадки</th>
@@ -38,8 +44,8 @@
         <td id="text3"></td>
         <td id="text4"></td>
         <td id="text5"></td>
-    </tr>
-</table>
+       </tr>
+       </table>
 
 
 
