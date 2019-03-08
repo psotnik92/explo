@@ -7,18 +7,26 @@
 </head>
 <body>
 <style>
-  html { background: url(https://raw.githubusercontent.com/psotnik92/explo/master/images/weather.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  html, body {
+     height: 100%;
+     min-height: 100vh;
   }
-  @media only screen and (max-width: 767px) {
-  body {
-   background-image: url(https://raw.githubusercontent.com/psotnik92/explo/master/images/weather.png);
+  html {
+      background-image: url(https://raw.githubusercontent.com/psotnik92/explo/master/images/weather.jpg);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
   }
-  table{
-  color: white;}
+  table th, table td{
+    color: white;
+  }
+
+  @media (max-width: 767px) {
+      html {
+        background-image: url(https://raw.githubusercontent.com/psotnik92/explo/master/images/weather.png);
+      }
+  }
 </style>
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
