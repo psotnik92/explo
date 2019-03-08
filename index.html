@@ -10,6 +10,7 @@
   html, body {
      height: 100%;
      min-height: 100vh;
+     color: white;
   }
   html {
       background-image: url(https://raw.githubusercontent.com/psotnik92/explo/master/images/weather.jpg);
@@ -40,22 +41,21 @@
 <p style="text-align: left"><button>2 Hours</button></p>
 <p style="text-align: left"><button>5 Hours</button></p>
 
-
+<t>City:</t><t id='City'></t><br>
+<t>Time:</t><t id="Time"></t>
 <table border="1" width="50%" cellpadding="2">
 
       <tr>
-    <th>Источник</th>
-    <th>Город</th>
-    <th>Осадки</th>
+    <th>Source</th>
+     <th>Weather</th>
     <th>T°С</th>
-    <th>Ветер</th>
+    <th>Wind</th>
     </tr>
     <tr>
      <td id="text1"></td>
-     <td id="text2"></td>
+         <td id="text2"></td>
         <td id="text3"></td>
         <td id="text4"></td>
-        <td id="text5"></td>
        </tr>
        </table>
 
@@ -67,4 +67,5 @@
 
 
 </body>
+
 </html>
