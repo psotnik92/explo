@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <style>
+        Table {
+        border-collapse: collapse;
+        }
+          td {
+          border: 1px solid black;
+          padding: 3px;
+
+
+          }
+
+
+    </style>
+    <script>
+         window.onload = function(){
+            var newTable = document.createElement('table');
+            for (var x=0; x<=24; x++) {
+                 var newRow = newTable.insertRow(x);
+              for (var y=0; y<=10; y++){
+                 var newCell = newRow.insertCell(y);
+                 newCell.width = 50;
+            }
+              }
+                  document.body.appendChild(newTable);
+         }
+</script>
+</head>
+<body>
+
+
+</body>
+</html>
