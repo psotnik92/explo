@@ -19,6 +19,10 @@ navigator.geolocation.getCurrentPosition(function(position) {
 
 
     $('#Now').on('click', function(){
+
+        $('#MyTableId2').html('')
+
+
       $.get('https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon +'&appid='+api_key, function (res){
 
         var temp2 = (res.main.temp - 273.15).toFixed(1)
@@ -38,8 +42,9 @@ navigator.geolocation.getCurrentPosition(function(position) {
       $.get ('https://api.openweathermap.org/data/2.5/forecast?lat='+lat+'&lon='+lon+'&appid='+api_key, function (res2){
 
 
-            var newTable = document.createElement('table');
-              $("#tabla").empty();
+            $('#MyTableId2').html('')
+            var newTable = $('#MyTableId2')[0]
+
             for (var x=0; x< res2.list.length; x++) {
                 var res = res2.list[x]
                  var temp2 = (res.main.temp - 273.15).toFixed(1)
@@ -59,8 +64,8 @@ navigator.geolocation.getCurrentPosition(function(position) {
                  newCell4.innerHTML = res.wind.speed+' m/sec'
 
             }
-                  $("#tabla").append(newTable);
-                  document.body.appendChild(newTable);
+
+//                  document.body.appendChild(newTable);
 
 
 
