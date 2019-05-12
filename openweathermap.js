@@ -53,7 +53,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
                  var newRow = newTable.insertRow(x);
 
                  var newCell1 = newRow.insertCell();
-                 newCell1.innerHTML = res.dt_txt
+                 newCell1.innerHTML = new Date(res.dt_txt).toLocaleString('ru')
 
                  var newCell2 = newRow.insertCell();
                  newCell2.innerHTML = res.weather[0].description
